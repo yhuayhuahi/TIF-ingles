@@ -1,0 +1,96 @@
+\documentclass[oneside,letterpaper]{article}            % document properties
+\usepackage[spanish, es-lcroman]{babel}                 % spanish package
+\usepackage[utf8]{inputenc}                             % codificacion de caracteres utf-8
+\usepackage{graphicx}                                   % Required for inserting images
+\usepackage{float}                                      % float child elements
+\usepackage[bottom=2cm,top=2.5cm,right=2.5cm,left=2.5cm]{geometry} % modify margins 
+\usepackage{setspace}                                   % configure space between lines
+%\usepackage{paracol}                                    % create multiple developed columns 
+\usepackage{enumitem}                                   % total control of lists and its bullets
+\usepackage{amsmath}                                    % math independencies
+\usepackage[hidelinks]{hyperref}                        % internal links and more
+\usepackage{multicol}                                   % multiple columsn
+\usepackage{lipsum}                                     % lipsum random text
+\usepackage{colortbl}                                   % define customize colors & table colore
+\usepackage{array}                                      % customize tables  
+\usepackage{rotating}                                   % allow rotate contents
+
+\renewcommand{\arraystretch}{2}                         % vertical space with factor 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  variables  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\itemYear}{A YEAR FULL OF INFINITE POSSIBILITIES}
+\newcommand{\itemRType}{TRABAJO DE INVESTIGACIÓN FORMATIVA}
+\newcommand{\itemCourseG}{INGLES}
+\newcommand{\itemTheme}{Lexical Exploration in Systems Engineering: A Comprehensive Collection of Key Terms for Each Letter of the Alphabet in English}
+\newcommand{\itemPracticeNumber}{0?}
+\newcommand{\itemAcademic}{2023 - B}
+\newcommand{\itemSemester}{VIII} %Romanos de preferencia
+\newcommand{\itemDate}{?? / ?? / 2023}
+\newcommand{\itemHour}{23:59 PM}
+
+\newcommand{\itemStudentA}{Basurco Casani Jeferson Joao}
+\newcommand{\itemStudentB}{Carrasco Choque Arles Melvin}
+\newcommand{\itemStudentC}{Forocca Mamani Maxs Sebastian Joaquin} 
+\newcommand{\itemStudentD}{Huayhua Hillpa Yourdyy Yossimar}
+\newcommand{\itemStudentE}{Participante Nombre Apellido 5}
+\newcommand{\itemTeacher}{Pilco Andia Carlota Cristina}
+\begin{document}
+\begin{titlepage}
+    \centering
+    \begin{spacing}{1.7}
+        \Large{``\itemYear''}\\ % add current year's name
+        \Large {\textsc{Universidad Nacional de San Agustín de Arequipa}}\\ 
+        \large{\textsc{Facultad de Ingeniería de Producción  y Servicios}\\
+        \textsc{Escuela Profesional de Ingeniería de Sistemas}}
+        \normalsize
+    \end{spacing}
+    
+    \vspace{0.5cm}
+    
+    \begin{figure}[h!]
+        \begin{center}
+            \includegraphics[scale=0.67]{images/IN.jpg} 
+        \end{center}
+    \end{figure}
+    
+    \itemRType\\ % change to "indivudual, grupal, o de respon. social.
+    \vspace{0.35cm}
+    Tema\\
+    \vspace{0.5cm}
+    \begin{spacing}{1}
+        \Large{\textsc{\itemTheme}}
+    \end{spacing}
+    \vspace{0.5cm}
+    \textsc{Asignatura:}\\\vspace{0.35cm}
+    \itemCourseG
+    \\\vspace{0.5cm}
+    \textsc{Docente:}\\\vspace{0.35cm}
+    \itemTeacher
+    
+    \vspace{0.25cm}
+    \begin{flushleft}
+    \textsc{ Integrantes:}\vspace{0.2cm}
+    \end{flushleft}
+    
+    \begin{multicols}{2}
+        \begin{flushleft}
+            \begin{spacing}{1.6}
+                \hspace{1.7cm}{\small $\bullet$ \itemStudentA}\\
+                \hspace{1.7cm}{\small $\bullet$ \itemStudentB}\\
+                \hspace{1.7cm}{\small $\bullet$ \itemStudentC}\\
+                \hspace{1.7cm}{\small $\bullet$ \itemStudentD}
+            \end{spacing}
+        \end{flushleft}
+    \end{multicols}
+    %{\small $\bullet$ \itemStudentE}\\       % if even numbers of members, delete this line, and adjust spaces
+    \vspace{1cm}
+    AREQUIPA 2024-A
+\end{titlepage}
+     
+    \begin{spacing}{1.8}                    % uncomment all of this if neccesary
+        \tableofcontents
+    \end{spacing}
+    \newpage 
+    
+    \input{desarrollo}% Desarrolla tu contenido dentro de desarrollo
+    %\input{conclusiones} % agregar las partes necesarias
+\end{document}
